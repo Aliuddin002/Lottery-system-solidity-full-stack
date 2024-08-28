@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    margin: 20px;
+}
+
+label, input, button {
+    display: block;
+    margin: 5px 0;
+}

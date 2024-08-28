@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.2.umd.min.js"></script>
+    <script defer src="./src/app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lottery DApp</h1>
+    
+    <div>
+        <h2>Admin</h2>
+        <label for="minParticipants">Minimum Participants:</label>
+        <input type="number" id="minParticipants" placeholder="Set minimum participants">
+        <br>
+        <label for="minEther">Minimum Ether:</label>
+        <input type="number" id="minEther" placeholder="Set minimum ether">
+        <br>
+        <button id="setParameters">Set Parameters</button>
+        <br>
+        <button id="declareWinner">Declare Winner</button>
+        <br>
+        <button id="showPlayers">Show Players</button>
+        <ul id="playersList"></ul>
+    </div>
+
+    <div>
+        <h2>Participant</h2>
+        <label for="participationAmount">Amount of Ether:</label>
+        <input type="number" id="participationAmount" placeholder="Enter ether to participate">
+        <br>
+        <button id="participate">Participate</button>
+        <br>
+        <button id="checkWinner">Check Winner</button>
+        <p id="winnerAddress"></p>
+        <br>
+        <button id="checkNumber">Check Number of Participants</button>
+        <p id="numParticipants"></p>
+    </div>
+</body>
+</html>
